@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="text-5xl font-bold italic underline">
-          Hello world!
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reactasdasdasdasdasdqwdaedddqwdqwdqwdqw
-        </a>
-      </header>
+import { Routes, Route } from 'react-router-dom'
+import Login from './components/pages/Login'
+import Dashboard from './components/pages/Dashboard'
+export default function App() {
+    return (
+    <div>
+        <Routes>
+            <Route path='/sdfsf' element={<Login />} />
+            <Route path='/' element={<Dashboard />} />
+        </Routes>
     </div>
-  );
+    );
 }
-
-export default App;
